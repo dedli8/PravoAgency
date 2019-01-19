@@ -1,0 +1,20 @@
+@import '/assets/scss/settings';
+@import '/assets/scss/mixins';
+@import "/assets/scss/fonts";
+@import "/assets/scss/reset";
+//@import "../../components/newdropdown/_newdropdown";
+body{
+$fontkmaincolor
+}
+.section-title{
+  color: $fonttitle;
+  font-size: 28px;
+  font-family: $gothambold;
+}
+.header>*{
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu{
+
+}
