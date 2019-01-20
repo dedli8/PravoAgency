@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import './_services.scss'
 
 class Services extends Component {
     render() {

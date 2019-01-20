@@ -1,3 +1,4 @@
+@import "../../assets/scss/mixins";
 .header {
   padding-top: 45px;
   .container{
@@ -14,26 +15,22 @@
     width: 110px;
     margin-right: 80px;
     @include media($width-xs){
-      margin-right: 0;
-      padding-left: 57px;
+      padding-left: 5.35%;
     }
   }
   .main-menu{
-   font-size: 0;
+    font-size: 0;
     text-align: center;
     order: 3;
     margin-top: 20px;
     width: 100%;
     @include media($width-xs){
       margin-top: 0;
-      order: initial;
+      order: 2;
       flex-grow: 2;
-      padding-right: 2%;
+      padding-right: 10.7%;
       text-align: right;
       width: auto;
-    }
-    @include media($width-sm) {
-      padding-right: 10.7%;
     }
     .item {
       text-transform: uppercase;
@@ -73,7 +70,7 @@
       line-height: 17px;
     }
     .active{
-background-color: inherit;
+      background-color: inherit;
       font-size: 11px;
       width: 50%;
       text-align: center;

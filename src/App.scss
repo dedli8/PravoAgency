@@ -2,19 +2,46 @@
 @import '/assets/scss/mixins';
 @import "/assets/scss/fonts";
 @import "/assets/scss/reset";
-//@import "../../components/newdropdown/_newdropdown";
 body{
-$fontkmaincolor
+color: $fontmain;
 }
-.section-title{
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-banner-wrap{
+  background: url("./assets/img/mainbg.jpg") left top;
+  background-size: cover;
+}
+.main-title{
   color: $fonttitle;
   font-size: 28px;
-  font-family: $gothambold;
+  font-family: $gothambold, sans-serif;
+  text-align: center;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: $pinkmain;
+  }
 }
-.header>*{
-  display: inline-block;
-  vertical-align: middle;
+.main-btn{
+  width: 180px;
+  height: 50px;
+  background-color: $pinkmain;
+  font-family: $gothambold, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  line-height: 50px;
+  border-radius: 23px;
 }
-.main-menu{
-
-}
+@import "./components/header/_header";
+@import "./components/banner/_banner";
+@import "./components/services/_services";
+@import "./components/reviews/_reviews";
+@import "./components/feedbackform/_feedbackform";
+@import "./components/footer/_footer";

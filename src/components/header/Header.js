@@ -1,20 +1,24 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import logo from '../../assets/img/logo.svg';
-import './_header.scss'
+import logo from '../../assets/img/Logo.svg';
+
 class Header extends Component {
     render() {
         return (
-                <header className="header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <nav className="main-menu">
-                        <a href="#" className="item">услуги и цены</a><a href="#" className="item"></a>отзывы<a href="#" className="item">контакты</a>
-                    </nav>
-                    <div className="lang-toggle">
-                        <div className="item">ru</div>
-                        <div className="item">ua</div>
-                    </div>
-                </header>
+            <header className="header">
+                <div className="container">
+                    <a href="#">
+                <img src={logo} className="logo" alt="logo"/></a>
+                <nav className="main-menu">
+                    <a href="#" className="item">услуги и цены</a><a href="#" className="item">отзывы</a><a href="#"
+                                                                                                            className="item">контакты</a>
+                </nav>
+                <div className="lang-toggle">
+                    <div className="item">ua</div>
+                    <div className="item active">ru</div>
+                </div>
+                </div>
+            </header>
         );
     }
 }
