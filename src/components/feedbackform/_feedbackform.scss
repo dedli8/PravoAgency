@@ -1,0 +1,160 @@
+.feedback{
+  font-family: $gothammed, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  .title-wrap{
+    padding-bottom: 36px;
+  }
+  .form{
+    display: flex;
+    padding: 0 160px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .left{
+      margin-bottom: 38px;
+    }
+    .left, .right{
+      width: 47.5%;
+    }
+    .inputs-wrap{
+      input{
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 20px;
+        border: 0;
+        outline: none;
+        border-bottom: 1px solid #dcdcdc;
+        font-family: $gothamblack, sans-serif;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        &:last-child{
+          margin-bottom: 49px;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: $fonttitle;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 20px;
+          font-family: $gothammed, sans-serif;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: $fonttitle;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 20px;
+          font-family: $gothammed, sans-serif;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: $fonttitle;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 20px;
+          font-family: $gothammed, sans-serif;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: $fonttitle;
+          text-transform: uppercase;
+          font-size: 11px;
+          line-height: 20px;
+          font-family: $gothammed, sans-serif;
+        }
+      }
+    }
+    .topic-box{
+      .title{
+        border: 1px solid #dcdcdc;
+        padding: 20px;
+        background-color: #fcfcfd;
+        position: relative;
+        &:before {
+          content: '\279C';
+          font-size: 10px;
+          line-height: 19px;
+          position: absolute;
+          right: 18px;
+          top: 14px;
+          width: 22px;
+          color: #d2d2d7;
+          font-family: $gothamblack;
+          text-align: center;
+          height: 22px;
+          border-radius: 50%;
+          border: 2px solid #d2d2d7;
+          transform: rotate(-90deg);
+          box-sizing: border-box;
+        }
+      }
+      li{
+        font-size: 13px;
+        text-transform: initial;
+        font-family: $gotham, sans-serif;
+        position: relative;
+        margin-bottom: 18px;
+        cursor: pointer;
+        &:before {
+          content: '';
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          border: 2px solid #c9cacf;
+          box-sizing: border-box;
+          position: absolute;
+          left: -23px;
+          top: 3px;
+        }
+        &:hover{
+          color: $pinkmain;
+          font-family: $gothamblack, sans-serif;
+        }
+        &:hover:before{
+          border-color: $pinkmain;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      .topic-list{
+        border: 1px solid #dcdcdc;
+        border-top-width: 0;
+        padding: 27px 0 26px 43px;
+      }
+    }
+  }
+  .right {
+    margin-left: 5%;
+    label{
+      margin-bottom: 8px;
+      display: inline-block;
+      padding-top: 11px;
+    }
+    textarea {
+      height: 250px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #dcdcdc;
+      resize: none;
+      padding: 15px 0 0 15px;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #9fa0a3;
+        font-size: 15px;
+        font-family: $gotham, sans-serif;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #9fa0a3;
+        font-size: 15px;
+        font-family: $gotham, sans-serif;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #9fa0a3;
+        font-size: 15px;
+        font-family: $gotham, sans-serif;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #9fa0a3;
+        font-size: 15px;
+        font-family: $gotham, sans-serif;
+      }
+    }
+  }
+}

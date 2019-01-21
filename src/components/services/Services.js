@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import Sectiontitle from '../sectiontitle/Sectiontitle'
 import Service from './service/Service';
 import Case from './icons/Case.js'
 import Optimization from './icons/Optimization.js'
@@ -45,17 +45,19 @@ class Services extends Component {
                 contentTitle: 'К сожалению, конфликты бывают в любой сфере. Если дело близится к суду или уже дошло до него, мы поможем отстоять ваши права и интересы.',
                 contentList: []
             }
-        ]
+        ],
+        titledata:{
+            title: "Услуги и цены",
+            description: "выполняет роль юристов-аутсорсеров, надежно прикрывая",
+            strong: "Pravo agency"
+        },
     };
     render() {
         const {services} = this.state;
+        const {title, description, strong} = this.state.titledata;
         return (
             <section className="services">
-                <div className="title-wrap">
-                <h2 className="main-title section-title">Услуги и цены</h2>
-                <p className="title-description"><strong>Pravo agency</strong> выполняет роль юристов-аутсорсеров, надежно прикрывая
-                    правовой тыл вашей деятельности.</p>
-                </div>
+                <Sectiontitle title = {title} description = {description} strong={strong}/>
                 <div className="container">
                     <div className="services-wrap">
                             {services.map(service =>
