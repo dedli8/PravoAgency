@@ -52,10 +52,10 @@
   &:nth-child(3):before{
     @include media($width-max){
       content: '';
-      height: 100%;
       position: absolute;
       right: -1px;
       top: 30px;
+      height: 200px;
       border-right: 1px dashed #cdcdcf;
     }
   }
