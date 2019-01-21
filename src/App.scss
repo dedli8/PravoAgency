@@ -15,16 +15,41 @@ color: $fontmain;
   background-size: cover;
 }
 .main-title{
+  position: relative;
   color: $fonttitle;
   font-size: 28px;
   font-family: $gothambold, sans-serif;
   text-align: center;
+  margin-bottom: 31px;
   &:before{
     content: '';
     position: absolute;
     width: 40px;
     height: 2px;
     background-color: $pinkmain;
+  }
+}
+.title-wrap {
+  padding: 54px 0;
+  border-bottom: 1px solid #f4f4f4;
+  .section-title {
+    text-transform: uppercase;
+    &:before {
+      left: 48.25%;
+      bottom: -18px;
+    }
+  }
+  .title-description {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: $gotham, sans-serif;
+
+    strong {
+      font-weight: bold;
+    }
   }
 }
 .main-btn{
@@ -42,6 +67,7 @@ color: $fontmain;
 @import "./components/header/_header";
 @import "./components/banner/_banner";
 @import "./components/services/_services";
+@import "./components/services/service/_service";
 @import "./components/reviews/_reviews";
 @import "./components/feedbackform/_feedbackform";
 @import "./components/footer/_footer";
