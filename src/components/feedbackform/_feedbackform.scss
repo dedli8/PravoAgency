@@ -7,14 +7,20 @@
   }
   .form{
     display: flex;
-    padding: 0 160px;
     justify-content: center;
     flex-wrap: wrap;
-    .left{
-      margin-bottom: 38px;
+    padding: 0 40px;
+    @include media($width-xs){
+      padding: 0 80px;
+    }
+    @include media($width-sm){
+      padding: 0 160px;
     }
     .left, .right{
-      width: 47.5%;
+      width: 100%;
+      @include media($width-sm){
+        width: 47.5%;
+      }
     }
     .inputs-wrap{
       input{
@@ -122,14 +128,16 @@
     }
   }
   .right {
-    margin-left: 5%;
+     @include media($width-sm){
+      margin-left: 5%;
+    }
     label{
       margin-bottom: 8px;
       display: inline-block;
       padding-top: 11px;
     }
     textarea {
-      height: 250px;
+      height: 100px;
       width: 100%;
       box-sizing: border-box;
       border: 1px solid #dcdcdc;
@@ -155,6 +163,12 @@
         font-size: 15px;
         font-family: $gotham, sans-serif;
       }
+      @include media($width-sm){
+        height: 250px;
+      }
     }
+  }
+  .main-btn{
+    margin-top: 38px;
   }
 }
