@@ -48,7 +48,7 @@ class Services extends Component {
         ],
         titledata:{
             title: "Услуги и цены",
-            description: "выполняет роль юристов-аутсорсеров, надежно прикрывая",
+            description: "выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.",
             strong: "Pravo agency"
         },
     };

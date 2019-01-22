@@ -86,6 +86,10 @@
     @include media($width-sm){
       display: block;
     }
+    @include media($width-max){
+      top: 227px;
+      left: 543px;
+    }
     &:hover{
       background-color: $pinkmain;
     }

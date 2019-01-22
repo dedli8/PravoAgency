@@ -2,6 +2,8 @@
   font-family: $gothammed, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 33px;
   .title-wrap{
     padding-bottom: 36px;
   }
@@ -123,7 +125,7 @@
       .topic-list{
         border: 1px solid #dcdcdc;
         border-top-width: 0;
-        padding: 27px 0 26px 43px;
+        padding: 27px 10px 26px 43px;
       }
     }
   }
