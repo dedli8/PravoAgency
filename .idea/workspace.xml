@@ -108,8 +108,8 @@
       <file leaf-file-name="_sectiontitle.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/sectiontitle/_sectiontitle.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="42">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -375,12 +375,12 @@
       <workItem from="1547968931431" duration="51939000" />
       <workItem from="1548083856944" duration="8847000" />
       <workItem from="1548098752052" duration="9230000" />
-      <workItem from="1548138641847" duration="46333000" />
+      <workItem from="1548138641847" duration="46608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162891000" />
+    <option name="totallyTimeSpent" value="163166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
@@ -394,7 +394,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.69411767" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.57328147" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4928664" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4928664" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32872927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -735,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/sectiontitle/_sectiontitle.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="42">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>

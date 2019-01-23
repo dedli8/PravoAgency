@@ -3,7 +3,7 @@
   .section-title {
     text-transform: uppercase;
     &:before {
-      width: 46%;
+      left: 46%;
       bottom: -18px;
       @include media($width-max){
         left: 48.25%;
