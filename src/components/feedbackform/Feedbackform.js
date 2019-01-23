@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Sectiontitle from "../sectiontitle/Sectiontitle";
+import Mainheader from "../mainheader/Mainheader";
 
 class Feedbackform extends Component {
     state={
@@ -19,7 +19,7 @@ class Feedbackform extends Component {
         const {title, key} = this.state;
         return (
             <section className="feedback" id='feedbackform'>
-<Sectiontitle title ={title}  key={key}/>
+<Mainheader title ={title} key={key}/>
                 <div className="container"><form className="form">
 <div className="left">
     <div className="inputs-wrap">

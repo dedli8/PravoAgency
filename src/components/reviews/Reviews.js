@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Sectiontitle from '../sectiontitle/Sectiontitle'
+import Mainheader from '../mainheader/Mainheader'
 import Review from './review/Review'
 import Avatar1 from '../../assets/img/avatar1.jpg'
 import Avatar2 from '../../assets/img/avatar2.jpg'
@@ -47,7 +47,7 @@ class Reviews extends Component {
     const {title, description, strong, key} = this.state.titledata;
         return (
             <section className='reviews-section' id='reviews'>
-                <Sectiontitle title = {title} description = {description} strong={strong} key={key}/>
+                <Mainheader title = {title} description = {description} strong={strong} key={key}/>
                 <div className="container">
                     <div className="reviews-wrap">
                     {reviews.map((review, index) => <Review review={review} key={index}/>)}

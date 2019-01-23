@@ -7,7 +7,7 @@ class ServicesModal extends Component {
                 <div className="red-line"><div className="arrow"></div></div>
                 <div className="block">
                     <p className="name">Услуга</p>
-                    <div className="content">
+                    <div className="main-content">
                         <h3 className="title">Оптимизация
                             договорных отношений </h3>
                         <p className="text">Борьба внутри меня, и я был в самых разных
@@ -21,7 +21,7 @@ class ServicesModal extends Component {
                 </div>
                 <div className="block">
                     <p className="name name-price">Цена</p>
-                    <div className="content">
+                    <div className="main-content">
                         <div className="price-wrap">
                         <div className="price-item">
                             <div className="num">&#60; 50</div>

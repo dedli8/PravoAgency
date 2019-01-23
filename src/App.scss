@@ -14,7 +14,7 @@ color: $fontmain;
   background: url("./assets/img/mainbg.jpg") left top;
   background-size: cover;
 }
-.main-title{
+.main-header{
   position: relative;
   color: $fonttitle;
   font-size: 28px;
@@ -47,7 +47,7 @@ color: $fontmain;
   }
 }
 @import "./components/header/_header";
-@import "./components/sectiontitle/_sectiontitle";
+@import "components/mainheader/mainheader";
 @import "./components/banner/_banner";
 @import "./components/services/_services";
 @import "./components/services/service/_service";

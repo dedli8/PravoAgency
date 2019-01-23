@@ -10,7 +10,7 @@ class Service extends Component {
                 {icon}
                 <h3 className="title">{title}</h3>
                 </div>
-                <div className="content-wrap">
+                <div className="main-content">
                     <p className="content-title">{contentTitle}</p>
                     <ul className="content-list">
                         {contentList.map((contactListItem, index) => {return <li key={ index }>{contactListItem}</li>;

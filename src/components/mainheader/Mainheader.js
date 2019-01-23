@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-class Sectiontitle extends Component {
+class Mainheader extends Component {
     render() {
         const {title, description, strong} = this.props;
         return (
             <div className="container">
             <div className="title-wrap">
-                <h2 className="main-title section-title">{title}</h2>
+                <h2 className="main-header section-title">{title}</h2>
                 <p className="title-description"><strong>{strong}</strong>{description}</p>
             </div>
             </div>
@@ -13,4 +13,4 @@ class Sectiontitle extends Component {
     }
 }
 
-export default Sectiontitle;
+export default Mainheader;

@@ -7,7 +7,7 @@ class Banner extends Component {
             <section className="banner">
                 <div className="container">
                     <div className="banner-wrap">
-                    <h1 className="main-title">Правовое
+                    <h1 className="main-header">Правовое
                         сопровождение
                         малого ИТ-бизнеса</h1>
                     <p className="text">Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Sectiontitle from '../sectiontitle/Sectiontitle'
+import Mainheader from '../mainheader/Mainheader'
 import Service from './service/Service';
 import ServicesModal from './modal/ServicesModal';
 import Case from './icons/Case.js'
@@ -59,8 +59,9 @@ class Services extends Component {
         const {services} = this.state;
         const {title, description, strong, key} = this.state.titledata;
         return (
+            // services section
             <section className="services" id="services">
-                <Sectiontitle title = {title} description = {description} strong={strong} key={key} />
+                <Mainheader title = {title} description = {description} strong={strong} key={key} />
                 <div className="container">
                     <div className="services-wrap">
                             {services.map((service, index) =>

@@ -7,7 +7,7 @@ class Review extends Component {
             <div className='review'>
                 <div className="icon-wrap">
 {icon}</div>
-                <p className="content">{content}</p>
+                <p className="main-content">{content}</p>
                 {avatar}
                 <p className="author">{author}</p>
                 <div className="field-wrap">
