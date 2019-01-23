@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Service extends Component {
     render() {
-        const {icon, title, contentTitle, contentList} = this.props.service;
+        const {icon, title, contentTitle, contentList, modal} = this.props.service;
         return (
             <div className='service'>
                 <div className="title-box">
@@ -13,11 +13,11 @@ class Service extends Component {
                 <div className="content-wrap">
                     <p className="content-title">{contentTitle}</p>
                     <ul className="content-list">
-                        {contentList.map(function(contactListItem, index){
-                            return <li key={ index }>{contactListItem}</li>;
+                        {contentList.map((contactListItem, index) => {return <li key={ index }>{contactListItem}</li>;
                         })}
                         </ul>
                 </div>
+                {modal}
                 </div>
         );
     }

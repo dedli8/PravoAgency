@@ -14,8 +14,8 @@ class Banner extends Component {
                         другие
                         IT-специалисты не уделяют должного внимания правовым аспектам своей деятельности.</p><p
                     className="text">Но <strong>документы должны быть в порядке </strong>, и мы в этом поможем.</p>
-                    <a href="#" className="main-btn">услуги и цены</a>
-                    <a href="#" className="btn-to-feedbackform">
+                    <a href="#services" className="main-btn">услуги и цены</a>
+                    <a href="#feedbackform" className="btn-to-feedbackform">
                         <div className="triangle">
                             <div>
                             </div>

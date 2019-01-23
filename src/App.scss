@@ -40,12 +40,18 @@ color: $fontmain;
   font-size: 11px;
   line-height: 50px;
   border-radius: 23px;
+  &:hover{
+    opacity: 0.8;
+    box-shadow: 0 0.5em 0.5em -0.4em $pinkmain;
+    transform: translateY(-0.25em);
+  }
 }
 @import "./components/header/_header";
 @import "./components/sectiontitle/_sectiontitle";
 @import "./components/banner/_banner";
 @import "./components/services/_services";
 @import "./components/services/service/_service";
+@import "./components/services/modal/_servicesmodal";
 @import "./components/reviews/_reviews";
 @import "./components/reviews/review/_review";
 @import "./components/feedbackform/_feedbackform";

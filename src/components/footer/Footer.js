@@ -7,7 +7,7 @@ class Footer extends Component {
     render() {
         return (
 
-    <footer className='footer'>
+    <footer className='footer' id="footer">
         <div className="container">
                 <h2 className="name">pravo agency:</h2>
         <address>01001, Киев, ул.Костёльная 9, оф.8<br/>+380 (67) 324 10 10<br/><a className="email">hello@pravo.agency</a>

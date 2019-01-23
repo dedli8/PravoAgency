@@ -7,7 +7,8 @@ import Avatar2 from '../../assets/img/avatar2.jpg'
 import YT from './icons/YT'
 import Quotes from './icons/Quotes'
 import Download from './icons/Download'
-class Servises extends Component {
+
+class Reviews extends Component {
     state= {
         reviews: [
             {
@@ -38,17 +39,18 @@ class Servises extends Component {
         titledata:{
             title: "отзывы",
             description: ["Мнение наших клиентов ", <strong>делает мир и нас лучше :)</strong>],
+            key: 5
         },
     };
     render() {
         const {reviews} = this.state;
-    const {title, description, strong} = this.state.titledata;
+    const {title, description, strong, key} = this.state.titledata;
         return (
-            <section className='reviews-section'>
-                <Sectiontitle title = {title} description = {description} strong={strong}/>
+            <section className='reviews-section' id='reviews'>
+                <Sectiontitle title = {title} description = {description} strong={strong} key={key}/>
                 <div className="container">
                     <div className="reviews-wrap">
-                    {reviews.map(review => <Review review={review}/>)}
+                    {reviews.map((review, index) => <Review review={review} key={index}/>)}
                     </div>
                     <div className="download-more"><Download/><span>загрузить еще</span> </div>
                 </div>
@@ -57,6 +59,5 @@ class Servises extends Component {
     }
 }
 
-Servises.propTypes = {};
 
-export default Servises;
+export default Reviews;

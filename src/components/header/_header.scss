@@ -60,6 +60,7 @@
     box-sizing: border-box;
     padding: 7px;
     .item{
+      cursor: pointer;
       display: inline-block;
       vertical-align: center;
       font-family: $gothamblack, sans-serif;

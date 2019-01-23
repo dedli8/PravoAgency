@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Sectiontitle from '../sectiontitle/Sectiontitle'
 import Service from './service/Service';
+import ServicesModal from './modal/ServicesModal';
 import Case from './icons/Case.js'
 import Optimization from './icons/Optimization.js'
 import Court from './icons/Court.js';
@@ -25,7 +26,8 @@ class Services extends Component {
                 contentTitle: '',
                 contentList: [" Доработка, латание дыр и улучшение условий основных типовых договоров вашей компании",
                     "Оформление сотрудников на оптимальных условиях ведения деятельности и налогообложения",
-                    "Составление договоров, соглашений о конфиденциальности, публичных офферт"]
+                    "Составление договоров, соглашений о конфиденциальности, публичных офферт"],
+                modal: <ServicesModal/>,
             },
             {
                 id: 3,
@@ -49,28 +51,26 @@ class Services extends Component {
         titledata:{
             title: "Услуги и цены",
             description: "выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности.",
-            strong: "Pravo agency"
+            strong: "Pravo agency ",
+            key: 7
         },
     };
     render() {
         const {services} = this.state;
-        const {title, description, strong} = this.state.titledata;
+        const {title, description, strong, key} = this.state.titledata;
         return (
-            <section className="services">
-                <Sectiontitle title = {title} description = {description} strong={strong}/>
+            <section className="services" id="services">
+                <Sectiontitle title = {title} description = {description} strong={strong} key={key} />
                 <div className="container">
                     <div className="services-wrap">
-                            {services.map(service =>
-                                (<Service service={service}/>))}
+                            {services.map((service, index) =>
+                                (<Service service={service} key={index}/>))}
                 </div>
                 </div>
                 <div className="line-throw"></div>
             </section>
-
         );
     }
 }
-
-Services.propTypes = {};
 
 export default Services;

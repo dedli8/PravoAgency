@@ -52,11 +52,6 @@
     @include media($width-xs){
       margin: 0;
     }
-    &:hover{
-      opacity: 0.8;
-        box-shadow: 0 0.5em 0.5em -0.4em $pinkmain;
-        transform: translateY(-0.25em);
-    }
     &:before {
       content: '\279C';
       font-size: 10px;
@@ -102,7 +97,7 @@
     }
     .triangle>div {
       width: 20px;
-      height: 2px;
+      height: 3px;
       background: $pinkmain;
       transition: background-color 0.5s;
     }

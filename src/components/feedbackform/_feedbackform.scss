@@ -71,6 +71,7 @@
     }
     .topic-box{
       .title{
+        cursor: pointer;
         border: 1px solid #dcdcdc;
         padding: 20px;
         background-color: #fcfcfd;
@@ -123,6 +124,7 @@
         }
       }
       .topic-list{
+        display: none;
         border: 1px solid #dcdcdc;
         border-top-width: 0;
         padding: 27px 10px 26px 43px;

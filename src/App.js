@@ -7,6 +7,7 @@ import Feedbackform from './components/feedbackform/Feedbackform';
 import Footer from './components/footer/Footer';
 import './App.scss';
 
+
 class App extends Component {
   render() {
     return (
