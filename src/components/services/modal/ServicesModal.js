@@ -2,21 +2,15 @@ import React, {Component} from 'react';
 
 class ServicesModal extends Component {
     render() {
+        const {title, text, price1, price2, price3, num1, num2, num3, modalStyle, redLineStyle, redArrowStyle} = this.props.modalData;
         return (
-            <div className='services-modal'>
-                <div className="red-line"><div className="arrow"></div></div>
+            <div className='services-modal' style={modalStyle}>
+                <div className="red-line" style={redLineStyle}><div className="arrow" style={redArrowStyle}></div></div>
                 <div className="block">
                     <p className="name">Услуга</p>
                     <div className="main-content">
-                        <h3 className="title">Оптимизация
-                            договорных отношений </h3>
-                        <p className="text">Борьба внутри меня, и я был в самых разных
-                            ситуациях в моей жизни. <strong>Таким образом, борьба, что
-                            у меня на постоянной основе, это просто пробовать
-                            и быть лучше.</strong><br/>
-                            <br/>
-                            Есть определенная разница между публичным человеком и обычным человеком, это как сойти с ума
-                            - для меня во всяком случае - открыть себя целиком для всего мира. </p>
+                        <h3 className="main-title">{title}</h3>
+                        <p className="text">{text}</p>
                     </div>
                 </div>
                 <div className="block">
@@ -24,19 +18,19 @@ class ServicesModal extends Component {
                     <div className="main-content">
                         <div className="price-wrap">
                         <div className="price-item">
-                            <div className="num">&#60; 50</div>
+                            <div className="num">{num1}</div>
                             <div className="employee">Сотрудников</div>
-                            <div className="price">от <span>5000 <small>грн.</small></span></div>
+                            <div className="price">от <span>{price1} <small>грн.</small></span></div>
                         </div>
                         <div className="price-item">
-                            <div className="num">50-100</div>
+                            <div className="num">{num2}</div>
                             <div className="employee">Сотрудников</div>
-                            <div className="price">от <span>15000 <small>грн.</small></span></div>
+                            <div className="price">от <span>{price2} <small>грн.</small></span></div>
                         </div>
                         <div className="price-item">
-                            <div className="num">&#62; 100</div>
+                            <div className="num">{num3}</div>
                             <div className="employee">Сотрудников</div>
-                            <div className="price">от <span>25000 <small>грн.</small></span></div>
+                            <div className="price">от <span>{price3} <small>грн.</small></span></div>
                         </div>
                         </div>
                         <button className="main-btn">заказать</button>

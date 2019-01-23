@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import ServicesModal from '../modal/ServicesModal';
 
 class Service extends Component {
     render() {
-        const {icon, title, contentTitle, contentList, modal} = this.props.service;
+        const {icon, title, contentTitle, contentList, modalData} = this.props.service;
         return (
             <div className='service'>
                 <div className="title-box">
                 {icon}
-                <h3 className="title">{title}</h3>
+                <h3 className="main-title">{title}</h3>
                 </div>
                 <div className="main-content">
                     <p className="content-title">{contentTitle}</p>
@@ -17,7 +18,7 @@ class Service extends Component {
                         })}
                         </ul>
                 </div>
-                {modal}
+                <ServicesModal modalData={modalData}/>
                 </div>
         );
     }

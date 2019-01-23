@@ -6,15 +6,6 @@ class Feedbackform extends Component {
         title: "запрос на услуги",
         key: 9
     };
-    toggleTopicBox = (e) => {
-        if(e.target.nextElementSibling.style.display == "") {
-            e.target.nextElementSibling.style.display = "block";}
-            else if(e.target.nextElementSibling.style.display == "none") {
-                e.target.nextElementSibling.style.display = "block";
-        }else if(e.target.nextElementSibling.style.display == "block"){
-            e.target.nextElementSibling.style.display = "none";
-        }
-    };
     render() {
         const {title, key} = this.state;
         return (
@@ -26,14 +17,26 @@ class Feedbackform extends Component {
     <input type="text" placeholder='имя*'/><input type="text" placeholder="телефон*"/><input type="text" placeholder="e-mail*"/><input type="text" placeholder="сайт"/>
     </div>
     <div className="topic-box">
-        <p className="title" onClick={this.toggleTopicBox.bind(this)}>
-            МЕНЯ ИНТЕРЕСУЕТ</p>
-        <ul className="topic-list">
-            <li>Наведение порядка в делах</li>
-            <li>Правовое сопровождение деятельности</li>
-            <li>Оптимизация договорных отношений</li>
-            <li>Разработка договоров</li>
-        </ul>
+        <p className="main-title">
+            МЕНЯ ИНТЕРЕСУЕТ <span className="arrow">&#10140;</span></p>
+        <div className="topic-list">
+            <label className="checkbox-wrap">Наведение порядка в делах
+                <input type="checkbox"></input>
+                    <span className="checkmark"></span>
+            </label>
+            <label className="checkbox-wrap">Правовое сопровождение деятельности
+                <input type="checkbox"></input>
+                    <span className="checkmark"></span>
+            </label>
+            <label className="checkbox-wrap">Оптимизация договорных отношений
+                <input type="checkbox"></input>
+                    <span className="checkmark"></span>
+            </label>
+            <label className="checkbox-wrap">Разработка договоров
+                <input type="checkbox"></input>
+                    <span className="checkmark"></span>
+            </label>
+        </div>
     </div>
 </div>
 <div className="right">

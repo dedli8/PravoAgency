@@ -9,7 +9,6 @@
   z-index: 1;
   height: 85%;
   width: 50%;
-  left: 0;
   padding-right: 93px;
   box-sizing: border-box;
   .red-line{
@@ -17,17 +16,14 @@
     width: 0;
     border-right: 1px solid $pinkmain;
     position: absolute;
-    right: -1px;
-    top: -25px;
     .arrow{
       position: absolute;
       width: 6px;
       height: 6px;
-      border-top: 1px solid $pinkmain;
-      border-right: 1px solid $pinkmain;
+      border: solid $pinkmain;
       transform: rotate(45deg);
       top: 32px;
-      right: -5px;
+      right: -4px;
       background-color: white;
       z-index: 1;
     }
@@ -48,7 +44,7 @@
     .main-content {
       flex-grow: 2;
     }
-    .title{
+    .main-title{
       font-size: 15px;
       font-family: $gothambold, sans-serif;
       text-transform: uppercase;
