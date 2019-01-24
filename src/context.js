@@ -35,6 +35,54 @@ export class Provider extends Component{
                 author: "Григорий Маленко",
                 field: "CEO",
                 company: "deco.agency"
+            },
+            {
+                icon: <Quotes/>,
+                content: "Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.",
+                avatar: [<img src={Avatar1} className='avatar'/>],
+                author: "Алексей Фёдоров",
+                field: "CEO",
+                company: "deco.agency"
+            },
+            {
+                icon: <Quotes/>,
+                content: "Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.",
+                avatar: [<img src={Avatar2} className='avatar'/>],
+                author: "Артур Оруджалиев",
+                field: "CEO",
+                company: "AIN.ua"
+            },
+            {
+                icon: <YT/>,
+                content: [<iframe className='yt-container' src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>],
+                author: "Григорий Маленко",
+                field: "CEO",
+                company: "deco.agency"
+            },
+            {
+                icon: <Quotes/>,
+                content: "Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.",
+                avatar: [<img src={Avatar1} className='avatar'/>],
+                author: "Алексей Фёдоров",
+                field: "CEO",
+                company: "deco.agency"
+            },
+            {
+                icon: <Quotes/>,
+                content: "Главная тема для меня – любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, — это всего лишь попытки найти счастье.",
+                avatar: [<img src={Avatar2} className='avatar'/>],
+                author: "Артур Оруджалиев",
+                field: "CEO",
+                company: "AIN.ua"
+            },
+            {
+                icon: <YT/>,
+                content: [<iframe className='yt-container' src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>],
+                author: "Григорий Маленко",
+                field: "CEO",
+                company: "deco.agency"
             }
         ],
         reviewsTitledata:{
