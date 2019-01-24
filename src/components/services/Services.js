@@ -17,9 +17,9 @@ class Services extends Component {
                                 <div className="services-wrap">
                                     {services.map((service, index) =>
                                         (<Service service={service} key={index}/>))}
+                                    <div className="line-throw"></div>
                                 </div>
                             </div>
-                            <div className="line-throw"></div>
                         </section>
                     );
                 }
