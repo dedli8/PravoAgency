@@ -9,13 +9,12 @@ import YT from './components/reviews/icons/YT'
 import Quotes from './components/reviews/icons/Quotes'
 
 const Context = React.createContext();
-const reduser = (state, action) => {
+const reducer = (state, action) => {
     switch (action.type){
-        case "DELETE_CONTACT":
+        case "TOGGLE_LANG":
             return{
-                ...state,
-                contacts: state.contacts.filter((contact)=> contact.id !== action.payload)
-            }
+                ...state, uaLang: !state.uaLang
+              };
         default: return state;
     }
 }
@@ -239,8 +238,9 @@ export class Provider extends Component{
             strong: "Pravo agency ",
             key: 7
         },
+        uaLang: false,
         dispatch: action =>{
-            this.setState(state => reduser(state,action))
+            this.setState(state => reducer(state, action))
         }
     };
     render() {
