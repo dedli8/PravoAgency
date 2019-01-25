@@ -9,6 +9,16 @@ import YT from './components/reviews/icons/YT'
 import Quotes from './components/reviews/icons/Quotes'
 
 const Context = React.createContext();
+const reduser = (state, action) => {
+    switch (action.type){
+        case "DELETE_CONTACT":
+            return{
+                ...state,
+                contacts: state.contacts.filter((contact)=> contact.id !== action.payload)
+            }
+        default: return state;
+    }
+}
 export class Provider extends Component{
     state={
         reviews: [
@@ -229,6 +239,9 @@ export class Provider extends Component{
             strong: "Pravo agency ",
             key: 7
         },
+        dispatch: action =>{
+            this.setState(state => reduser(state,action))
+        }
     };
     render() {
         return(

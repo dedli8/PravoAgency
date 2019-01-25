@@ -60,10 +60,10 @@
     border: 2px solid #dfdfe2;
     box-sizing: border-box;
     padding: 7px;
+    cursor: pointer;
     .item{
-      cursor: pointer;
       display: inline-block;
-      vertical-align: center;
+      vertical-align: middle;
       font-family: $gothamblack, sans-serif;
       color: $pinkmain;
       border-radius: 50%;
