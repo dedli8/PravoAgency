@@ -238,6 +238,9 @@ export class Provider extends Component{
             strong: "Pravo agency ",
             key: 7
         },
+        feedbackTitledata: {
+            title: "запрос на услуги",                      key: 9
+        },
         uaLang: false,
         dispatch: action =>{
             this.setState(state => reducer(state, action))
