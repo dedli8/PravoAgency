@@ -14,7 +14,8 @@ class Service extends Component {
                 <div className="main-content">
                     <p className="content-title">{contentTitle}</p>
                     <ul className="content-list">
-                        {contentList.map((contactListItem, index) => {return <li key={ index }>{contactListItem}</li>;
+                        {contentList.map((contactListItem, index) => {
+                            return <li key={ index }>{contactListItem}</li>;
                         })}
                         </ul>
                 </div>
